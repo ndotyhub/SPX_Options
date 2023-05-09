@@ -1,0 +1,22 @@
+heroku deployment
+
+in anacondas prompt:
+
+$ heroku login
+
+$ cd ~/myapp
+$ heroku create my-app-name
+
+$ git init
+$ virtualenv venv
+
+$ git add .
+$ git commit -m 'initcommit'
+$ heroku git:remote -a my-app-name
+
+$ git push heroku master
+$ heroku ps:scale web=1
+
+
+logging for debugging
+$ heroku logs -t
